@@ -9,9 +9,9 @@ var livro = DOM.getElementsByTagName('livro')[0];
 
 var id = livro.getAttribute('id');
 
-var titulo = livro.getElementsByTagName('titulo')[0];
-var autor = livro.getElementsByTagName('autor')[0];
-var ano = livro.getElementsByTagName('ano')[0];
+var titulo = livro.firstChild;
+var autor = titulo.nextSibling;
+var ano = autor.nextSibling;
 
 var divLivro = document.getElementById("livro-especifico");
 
