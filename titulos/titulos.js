@@ -1,6 +1,6 @@
 
 var livrosXML = new XMLHttpRequest();
-livrosXML.open("GET", "livros.xml", false);
+livrosXML.open("GET", "../livros.xml", false);
 livrosXML.send();
 
 var DOM = livrosXML.responseXML;
